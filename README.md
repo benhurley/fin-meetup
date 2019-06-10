@@ -23,3 +23,7 @@ localhost:4200
 ```
 npm install --save-dev @angular-devkit/build-angular
 ```
+2. You can specify which host you would like to serve the app on
+```
+ng serve --port 1234
+```
