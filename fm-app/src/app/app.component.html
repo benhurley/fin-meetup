@@ -1,6 +1,15 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!-- navigation bar -->
+<nav class="navbar navbar-expand navbar-dark bg-dark">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" routerLink="/login">Login</a>
+        <a class="nav-item nav-link" routerLink="/register">Register</a>
+    </div>
+</nav>
+<!-- Main Page -->
 <html>
     <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
         <div style="text-align:center">
@@ -9,7 +18,7 @@
                 Welcome to Fin Meetup!
               </h1>
         </div>
-        <h2>Groups: </h2>
+        <router-outlet></router-outlet>
     </body>
 </html>
 
