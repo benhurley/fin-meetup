@@ -12,3 +12,12 @@ img.resize {
 .card-body {
     background-color: lightgrey;
 }
+
+.card-block {
+    max-width: 300px;
+}
+
+.group-container {
+    padding-left: 10%; 
+    padding-right: 10%;
+}
