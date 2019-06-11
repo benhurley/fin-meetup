@@ -22,6 +22,7 @@ img.resize {
 .group-container {
     padding-left: 10%; 
     padding-right: 10%;
+    padding-bottom: 5%;
 }
 
 .row-striped:nth-of-type(odd){
@@ -39,8 +40,7 @@ img.resize {
 
 .row {
     border-radius: 25px;
-
     padding-top: 3%;
     padding-bottom: 3%;
-    background-color: rgb(45, 70, 133);
+    background-color: rgb(0, 85, 170);
 }
