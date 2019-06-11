@@ -2,7 +2,11 @@
     --input-padding-x: 1.5rem;
     --input-padding-y: .75rem;
   }
-  
+ 
+  .mainTitle {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+
   .card-signin {
     border: 0;
     border-radius: 1rem;
