@@ -38,7 +38,9 @@ img.resize {
 }
 
 .row {
-    padding-top: 1%;
-    padding-bottom: 1%;
+    border-radius: 25px;
+
+    padding-top: 3%;
+    padding-bottom: 3%;
     background-color: rgb(45, 70, 133);
 }
