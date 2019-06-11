@@ -18,13 +18,18 @@ img.resize {
 }
 
 .group-container {
-    padding-left: 10%; 
-    padding-right: 10%;
     padding-bottom: 1%;
     padding-top: 1%;
-    background-color: rgb(117, 119, 119);
+    padding-left: 10%; 
+    padding-right: 10%;
 }
 
 .sheaders {
-    padding-left:5%;
+    padding-left:10%;
+}
+
+.row {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgb(45, 70, 133);
 }
