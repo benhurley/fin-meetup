@@ -7,11 +7,14 @@
 }
 
 .card-body {
-    background-color: lightgrey;
+    background-color: white;
 }
 
 .card-block {
     max-width: 300px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.35);
 }
 
 img.resize {
@@ -26,7 +29,7 @@ img.resize {
 }
 
 .row-striped:nth-of-type(odd){
-    background-color: rgb(191, 194, 204);
+    background-color: rgb(220, 221, 228);
 }
 
 .row-striped:nth-of-type(even){
@@ -43,5 +46,8 @@ img.resize {
     border-radius: 25px;
     padding-top: 3%;
     padding-bottom: 3%;
-    background-color: rgb(255, 255, 255);
 }
+
+  body{
+    background-color: #f4f4f4  
+  }

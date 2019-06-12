@@ -107,6 +107,10 @@
     color: white;
     background-color: #3b5998;
   }
+
+  body{
+    background-color: #f4f4f4  
+  }
   
   /* Fallback for Edge
   -------------------------------------------------- */
