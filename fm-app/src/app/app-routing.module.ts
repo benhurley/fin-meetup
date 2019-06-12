@@ -9,7 +9,7 @@ import { RegisterComponent } from './register';
 import { EventsComponent } from './events';
 import { GroupsComponent } from './groups';
 import { JoinegComponent } from './joineg';
-
+import { CreateegComponent } from './createeg';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'events', component: EventsComponent},
   { path: 'groups', component: GroupsComponent },
   { path: 'join', component: JoinegComponent },
+  { path: 'create', component: CreateegComponent },
   // otherwise redirect to home
   { path: '**', redirectTo: '' }
 ];

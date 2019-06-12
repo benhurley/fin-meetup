@@ -10,6 +10,7 @@ import { RegisterComponent } from './register';
 import { EventsComponent } from './events';
 import { GroupsComponent } from './groups';
 import { JoinegComponent } from './joineg';
+import { CreateegComponent } from './createeg';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { JoinegComponent } from './joineg';
     RegisterComponent,
     EventsComponent,
     GroupsComponent,
-    JoinegComponent
+    JoinegComponent,
+    CreateegComponent
   ],
   imports: [
     BrowserModule,
