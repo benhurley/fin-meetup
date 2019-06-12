@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
-
+// New pages
+import { EventsComponent } from './events';
+import { GroupsComponent } from './groups';
+import { JoinegComponent } from './joineg';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    EventsComponent,
+    GroupsComponent,
+    JoinegComponent
   ],
   imports: [
     BrowserModule,
