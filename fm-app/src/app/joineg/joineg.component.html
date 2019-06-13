@@ -1,1 +1,9 @@
-<h1>Join search page for events and groups</h1>
+
+<h3>Hello {{users[0].userName}} click on a group to join now.</h3>
+<h5>You can view your groups in the home menu</h5>
+<br>
+<ul class="list-group">
+    <li *ngFor="let group of groups" class="list-group-item" (click)="joinGroup(group.groupName, group.groupId, users[0].userName, users[0].userId)">
+        {{group.groupName}}
+    </li>
+</ul>
