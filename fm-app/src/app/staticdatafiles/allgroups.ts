@@ -1,6 +1,7 @@
 export var groups = [
     {
         groupName: "AWS",
+        location: "New York",
         imgUrl: "https://images.techhive.com/images/article/2015/05/aws-logo-100584713-primary.idge.jpg",
         imgName: "AWS Logo",
         lastUpdated: "",
@@ -15,6 +16,7 @@ export var groups = [
     },
     {
         groupName: "Azure",
+        location: "Los Angeles",
         imgUrl: "https://venturebeat.com/wp-content/uploads/2017/12/microsoft-azure-new-logo-2017.png?fit=400%2C231&strip=all",
         imgName: "Azure Logo",
         lastUpdated: "",
@@ -29,6 +31,7 @@ export var groups = [
     },
     {
         groupName: "Bootstrap",
+        location: "Philadelphia",
         imgUrl: "https://cdn.view.ly/thumbnails/nXmP54wDa9sH/large.jpg",
         imgName: "Bootstrap Logo",
         lastUpdated: "",
@@ -43,6 +46,7 @@ export var groups = [
     },
     {
         groupName: "Microsoft",
+        location: "Seattle",
         imgUrl: "https://yt3.ggpht.com/a/AGF-l78f8ES-9_eZieHn8YSzA5IloOiJ0Bb6OwlJ=s900-mo-c-c0xffffffff-rj-k-no",
         imgName: "Microsoft Logo",
         lastUpdated: "",
@@ -57,6 +61,7 @@ export var groups = [
     },
     {
         groupName: "Apple",
+        location: "San Francisco",
         imgUrl: "https://yt3.ggpht.com/a/AGF-l7-wxI7DLGTXjXY0-SYuB7Os-aFHwgmtf4jPUQ=s900-mo-c-c0xffffffff-rj-k-no",
         imgName: "Apple Logo",
         lastUpdated: "",
@@ -71,6 +76,7 @@ export var groups = [
     },
     {
         groupName: "Tesla",
+        location: "Dallas",
         imgUrl: "https://i.pinimg.com/originals/85/75/79/857579f25c1269f438f3b7f22f9accc9.png",
         imgName: "Tesla Logo",
         lastUpdated: "",
