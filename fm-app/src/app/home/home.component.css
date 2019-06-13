@@ -52,3 +52,9 @@ img.resize {
   body{
     background-color: #f4f4f4  
   }
+
+.btn{
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.35);
+}
