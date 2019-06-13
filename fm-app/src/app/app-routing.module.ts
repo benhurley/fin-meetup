@@ -10,6 +10,9 @@ import { EventsComponent } from './events';
 import { GroupsComponent } from './groups';
 import { JoinegComponent } from './joineg';
 import { CreateegComponent } from './createeg';
+import { JoineventComponent } from './joinevent';
+import { CreateeventComponent } from './createevent';
+
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
@@ -19,6 +22,8 @@ const routes: Routes = [
   { path: 'groups', component: GroupsComponent },
   { path: 'join', component: JoinegComponent },
   { path: 'create', component: CreateegComponent },
+  { path: 'joinEvent', component: JoineventComponent },
+  { path: 'createEvent', component: CreateeventComponent },
   // otherwise redirect to home
   { path: '**', redirectTo: '' }
 ];

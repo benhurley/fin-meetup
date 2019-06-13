@@ -11,6 +11,9 @@ import { EventsComponent } from './events';
 import { GroupsComponent } from './groups';
 import { JoinegComponent } from './joineg';
 import { CreateegComponent } from './createeg';
+import { JoineventComponent } from './joinevent';
+import { CreateeventComponent } from './createevent';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,9 @@ import { CreateegComponent } from './createeg';
     EventsComponent,
     GroupsComponent,
     JoinegComponent,
-    CreateegComponent
+    CreateegComponent,
+    JoineventComponent,
+    CreateeventComponent
   ],
   imports: [
     BrowserModule,
