@@ -1,11 +1,12 @@
 # Fin Meetup
 
-This project is an application to help new fins communicate with one another.
+Fin Meetup is a webapp created with Angular to help new fins communicate with one another.<br><br>
+The app allows users to find groups and events in their office, and also allows them to create their own.
 
 
 ## Getting Started
 1. Clone the repo
-2. Navigate to the application folder
+2. Navigate into the application folder
 ```
 cd fm-app
 ```
