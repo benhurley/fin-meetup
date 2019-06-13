@@ -25,7 +25,7 @@ img.resize {
 .group-container {
     padding-left: 10%; 
     padding-right: 10%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
 }
 
 .row-striped:nth-of-type(odd){
@@ -44,8 +44,8 @@ img.resize {
 
 .button-row {
     border-radius: 25px;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
   body{
