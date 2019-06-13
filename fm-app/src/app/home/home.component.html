@@ -47,61 +47,23 @@
 </div>
 <!-- Scrollable Vertical List With Upcoming Event information -->
 <div class="group-container">
-    <div class="row button-row row-striped">
+    <div *ngFor="let event of events" class="row button-row row-striped">
         <div class="col-4 text-center">
             <h1 class="display-4"><span class="badge badge-secondary">31</span></h1>
             <h2>OCT</h2>
             <h3>2019</h3>
         </div>
         <div class="col-8">
-            <h3 class="text-uppercase"><strong>EMR Fest</strong></h3>
+            <h3 class="text-uppercase"><strong>{{event.eventNAME}}</strong></h3>
             <h5 class="text-uppercase"><strong>AWS (NEW York)</strong></h5>
             <ul class="list-inline">
                 <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Monday</li>
                 <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM - 2:00 PM
                 </li>
-                <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> WeWork Downtown
+                <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> {{event.location}}
                 </li>
             </ul>
-            <p>Security DevOps and coffee.</p>
-        </div>
-    </div>
-    <div class="row button-row row-striped">
-        <div class="col-4 text-center">
-            <h1 class="display-4"><span class="badge badge-secondary">1</span></h1>
-            <h2>NOV</h2>
-            <h3>2019</h3>
-        </div>
-        <div class="col-8">
-            <h3 class="text-uppercase"><strong>EMR Fest 2</strong></h3>
-            <h5 class="text-uppercase"><strong>AWS (NEW York)</strong></h5>
-            <ul class="list-inline">
-                <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Monday</li>
-                <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM - 2:00 PM
-                </li>
-                <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> WeWork Downtown
-                </li>
-            </ul>
-            <p>Security DevOps and coffee. Following up changes</p>
-        </div>
-    </div>
-    <div class="row button-row row-striped">
-        <div class="col-4 text-center">
-            <h1 class="display-4"><span class="badge badge-secondary">1</span></h1>
-            <h2>DEC</h2>
-            <h3>2019</h3>
-        </div>
-        <div class="col-8">
-            <h3 class="text-uppercase"><strong>EMR Fest 3</strong></h3>
-            <h5 class="text-uppercase"><strong>AWS (NEW York)</strong></h5>
-            <ul class="list-inline">
-                <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Monday</li>
-                <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM - 2:00 PM
-                </li>
-                <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> WeWork Downtown
-                </li>
-            </ul>
-            <p>Security DevOps and coffee. Following up changes</p>
+            <p>{{event.eventDetails}}</p>
         </div>
     </div>
 </div>

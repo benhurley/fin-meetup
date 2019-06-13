@@ -13,5 +13,12 @@ export class HomeComponent {
     groups = groups;
     events = events;
     users = users;
-    // create new group list based off of user membership.
+    /* 
+        create new group list based off of user membership. 
+    */
+    curUser = users[0]
+    //curUser.groupMemberships
+    /* 
+        create new event list based off of user attendance. 
+    */
 }
