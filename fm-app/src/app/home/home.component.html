@@ -14,103 +14,18 @@
 <div class="group-container">
     <div class="container-fluid">
         <div class="row button-row flex-row flex-nowrap" style="overflow-x: auto">
-            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div *ngFor="let group of groups" class="col-lg-3 col-md-6 col-sm-12 col-12">
                 <div class="card card-block h-100">
                     <div class="cheader">
-                        <img src="https://images.techhive.com/images/article/2015/05/aws-logo-100584713-primary.idge.jpg"
-                            class="card-img-top resize" alt="AWS Logo">
+                        <img [src]="group.imgUrl"
+                            class="card-img-top resize" alt="group.imgName">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">AWS (New York)</h5>
-                        <p class="card-text">This is a group for NY find to learn more about AWS.</p>
+                        <h5 class="card-title">{{group.groupName}}</h5>
+                        <p class="card-text">{{group.groupDetails}}</p>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 5 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                <div class="card card-block h-100">
-                    <div class="cheader">
-                        <img src="https://venturebeat.com/wp-content/uploads/2017/12/microsoft-azure-new-logo-2017.png?fit=400%2C231&strip=all"
-                            class="card-img-top resize" alt="Azure Logo">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Azure (LA)</h5>
-                        <p class="card-text">This group is for LA fins to have discussions around Azure best
-                            practices.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 15 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                <div class="card card-block h-100">
-                    <div class="cheader">
-                        <img src="https://cdn.view.ly/thumbnails/nXmP54wDa9sH/large.jpg" class="card-img-top resize"
-                            alt="Bootstrap Logo">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap (Philadelphia)</h5>
-                        <p class="card-text">For fins in Philly to grow their skills in front end web dev using
-                            bootstrap.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                <div class="card card-block h-100">
-                    <div class="cheader">
-                        <img src="https://images.techhive.com/images/article/2015/05/aws-logo-100584713-primary.idge.jpg"
-                            class="card-img-top resize" alt="AWS Logo">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">AWS (New York)</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional
-                            content. This content is a little bit longer.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 5 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                <div class="card card-block h-100">
-                    <div class="cheader">
-                        <img src="https://venturebeat.com/wp-content/uploads/2017/12/microsoft-azure-new-logo-2017.png?fit=400%2C231&strip=all"
-                            class="card-img-top resize" alt="Azure Logo">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Azure (LA)</h5>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                            content.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 15 mins ago</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-12">
-                <div class="card card-block h-100">
-                    <div class="cheader">
-                        <img src="https://cdn.view.ly/thumbnails/nXmP54wDa9sH/large.jpg" class="card-img-top resize"
-                            alt="Bootstrap Logo">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Bootstrap (All Fins)</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional
-                            content. This card has even longer content than the first to show that equal height
-                            action.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <small class="text-muted">Last updated {{group.lastUpdated}} mins ago</small>
                     </div>
                 </div>
             </div>
