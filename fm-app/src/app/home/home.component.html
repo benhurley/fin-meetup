@@ -26,7 +26,7 @@
 <div class="group-container">
     <div class="container-fluid">
         <div class="row button-row flex-row flex-nowrap" style="overflow-x: auto">
-            <div *ngFor="let group of newUserGroups" class="col-lg-3 col-md-6 col-sm-12 col-12">
+            <div *ngFor="let group of newUserGroups" class="col-lg-3 col-md-6 col-sm-12 col-12" (click)="viewGroup(group.groupName)">
                 <div class="card card-block h-100">
                     <div class="cheader">
                         <img [src]="group.imgUrl"

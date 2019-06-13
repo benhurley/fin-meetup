@@ -3,15 +3,15 @@
     <div class="col-lg-6 offset-lg-3 col-sm-6 offset-sm-3">
         <div class="card card-block">
             <div class="cheader">
-                <img src="https://images.techhive.com/images/article/2015/05/aws-logo-100584713-primary.idge.jpg"
-                    class="card-img-top resize" alt="AWS Logo">
+                <img [src]="groupToDisplay.imgUrl" class="card-img-top resize" alt="groupToDisplay.imgName">
             </div>
             <div class="card-body">
-                <h5 class="card-title">AWS (New York)</h5>
-                <p class="card-text">This is a group for NY find to learn more about AWS.</p>
+                <h5 class="card-title">{{groupToDisplay.groupName}}</h5>
+                <h6 class="card-title">{{groupToDisplay.location}}</h6>
+                <p class="card-text">{{groupToDisplay.groupDetails}}</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 5 mins ago</small>
+                <small class="text-muted">Last updated {{group.lastUpdated}} mins ago</small>
             </div>
         </div>
     </div>

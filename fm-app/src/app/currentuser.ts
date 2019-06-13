@@ -1,1 +1,1 @@
-export var currentuser = 0;
+export var currentuser = 7;
