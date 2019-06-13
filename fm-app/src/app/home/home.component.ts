@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { groups } from '../staticdatafiles/allgroups';
 import { events } from '../staticdatafiles/allevents';
 import { users } from '../staticdatafiles/allusers';
+import { currentuser } from '../currentuser';
 import { Router } from '@angular/router';
 
 @Component({
@@ -13,8 +14,9 @@ export class HomeComponent {
     groups = groups;
     events = events;
     users = users;
+    curuser = currentuser;
 
-    curUser = users[0]
+    curUser = users[this.curuser]
     //curUser.groupMemberships
     newUserGroups = []
     newUserEvents = []

@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { groups } from '../staticdatafiles/allgroups';
 import { users } from '../staticdatafiles/allusers';
 import {Router} from '@angular/router';
+import { currentuser } from '../currentuser';
+
 @Component({ 
     templateUrl: 'joineg.component.html',
     styleUrls: ['./joineg.component.css'] 
@@ -13,6 +15,7 @@ export class JoinegComponent {
     // Iterable list
     groups = groups;
     users = users;
+    curuser = currentuser;
 
     joinGroup(group, groupid, user, userid) {
         console.log("Joining this group: " + groupid + " " + group + " for user: " + userid + " " + user);

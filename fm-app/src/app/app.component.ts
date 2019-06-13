@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { users } from './staticdatafiles/allusers';
+import { currentuser } from './currentuser';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,6 @@ import { users } from './staticdatafiles/allusers';
 })
 export class AppComponent {
   users = users;
+  curuser = currentuser;
   title = 'Fin Meetup';
 }
