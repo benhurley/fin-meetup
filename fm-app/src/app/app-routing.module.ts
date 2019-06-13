@@ -20,8 +20,8 @@ const routes: Routes = [
   // Include new pages
   { path: 'events', component: EventsComponent},
   // main group page
-  { path: 'groups', component: GroupsComponent },
-  //{ path: 'groups/:groupId', component: GroupsComponent }, // specific page, for future use
+  //{ path: 'groups', component: GroupsComponent },
+  { path: 'groups/:groupId', component: GroupsComponent }, // specific page, for future use
   { path: 'join', component: JoinegComponent },
   { path: 'create', component: CreateegComponent },
   { path: 'joinEvent', component: JoineventComponent },

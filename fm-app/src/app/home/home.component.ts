@@ -22,7 +22,7 @@ export class HomeComponent {
     newUserEvents = []
     eventDateInfo = []
     //new group template 
-    constructor() {
+    constructor(private router: Router) {
         var memSize = this.curUser.groupMemberships.length
         var ateSize = this.curUser.eventAttendance.length
         var groupSize = groups.length
@@ -61,5 +61,11 @@ export class HomeComponent {
                 }
             }
         }
+    }
+    // action handling
+    viewGroup(gname){
+        console.log(gname)
+        // navigate to a certain page
+        this.router.navigate(["/groups/"+gname]);
     }
 }
