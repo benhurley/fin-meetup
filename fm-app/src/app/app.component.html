@@ -1,25 +1,33 @@
 <!-- navigation bar -->
 <nav class="navbar fixed-top navbar-expand navbar-dark bg-dark">
     <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/">Home</a>
-        <a class="nav-item nav-link" routerLink="/login">Login</a>
-<!--<a class="nav-item nav-link" routerLink="/register">Register</a>-->        
+        <ul class="navbar-nav ml-auto list-inline">
+            <li class="nav-item">
+                <a class="navbar-nav" routerLink="/">
+                    <img src="https://www.suntrust.com/content/dam/suntrust/us/en/shared/2017/momentum-ignite/Pariveda_Logo.png"
+                        style="max-width: 8em; max-height: 2em" class="img-fluid" href="#"></a>
+            </li>
+        </ul>
+        <!--<a class="nav-item nav-link" routerLink="/">Home</a>-->
+
+        <!--<a class="nav-item nav-link" routerLink="/register">Register</a>-->
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto list-inline">
             <li class="nav-item nav-link">
+
                 <svg style="width:24px;height:24px;" viewBox="0 0 24 24">
-                    <path fill="#ffffff" d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
+                    <path fill="#ffffff"
+                        d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" />
                 </svg>
             </li>
-            <li class="nav-item nav-link" style="margin-right: 1em; color: white">
+            <li class="nav-item nav-link" style="color: white">
                 <a>{{ users[curuser].userName }}</a>
             </li>
-            <li class="nav-item">
-                <a class="navbar-nav" routerLink="/">
-                    <img src="https://www.suntrust.com/content/dam/suntrust/us/en/shared/2017/momentum-ignite/Pariveda_Logo.png"
-                        style="max-width: 8em; max-height: 2em" class="img-fluid"></a>
-            </li>
+            <li class="nav-item nav-link">
+                    <a>|</a>
+                </li>
+            <a class="nav-item nav-link" routerLink="/login">Logout</a>
         </ul>
     </div>
 </nav>
