@@ -1,0 +1,9 @@
+.cheader {
+    width:auto;
+    height: 40%;
+    overflow: hidden;
+}
+
+.card-body {
+    background-color: lightgrey;
+}
