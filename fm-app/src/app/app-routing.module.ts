@@ -18,10 +18,12 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   // Include new pages
-  { path: 'events', component: EventsComponent},
+  //main 
+  //{ path: 'events', component: EventsComponent},
+  { path: 'events/:eventId', component: EventsComponent }, // group specific page
   // main group page
   //{ path: 'groups', component: GroupsComponent },
-  { path: 'groups/:groupId', component: GroupsComponent }, // specific page, for future use
+  { path: 'groups/:groupId', component: GroupsComponent }, // group specific page
   { path: 'join', component: JoinegComponent },
   { path: 'create', component: CreateegComponent },
   { path: 'joinEvent', component: JoineventComponent },

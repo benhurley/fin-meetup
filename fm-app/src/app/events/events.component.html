@@ -3,22 +3,21 @@
     <div class="col-lg-6 offset-lg-3 col-sm-6 offset-sm-3">
         <div class="card card-block">
             <div class="cheader">
-                <img src="https://dmhnzl5mp9mj6.cloudfront.net/bigdata_awsblog/images/JustGivingImage1a.PNG"
-                    class="card-img-top resize" alt="EMR Fest">
+                <img [src]="eventToDisplay.imgUrl"
+                    class="card-img-top resize" alt="eventToDisplay.eventName">
             </div>
             <div class="card-body">
-                <h5 class="card-title">EMR Fest</h5>
+                <h5 class="card-title">{{eventToDisplay.eventName}}</h5>
                 <ul class="list-inline">
-                    <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> Monday</li>
-                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 12:30 PM - 2:00 PM
+                    <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{dateDetails.day}} | {{dateDetails.date}}/{{dateDetails.month}}/{{dateDetails.year}}</li>
+                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> {{dateDetails.stime}} - {{dateDetails.etime}}
                     </li>
-                    <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> WeWork
-                        Downtown</li>
+                    <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> {{eventToDisplay.location}}</li>
                 </ul>
-                <p class="card-text">Security DevOps and coffee.</p>
+                <p class="card-text">{{eventToDisplay.eventDetails}}</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated 5 mins ago</small>
+                <small class="text-muted">Last updated x mins ago</small>
             </div>
         </div>
     </div>
