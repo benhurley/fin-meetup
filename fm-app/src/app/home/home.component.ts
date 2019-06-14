@@ -64,8 +64,11 @@ export class HomeComponent {
     }
     // action handling
     viewGroup(gname){
-        console.log(gname)
+        //console.log(gname)
         // navigate to a certain page
         this.router.navigate(["/groups/"+gname]);
+    }
+    viewEvent(eid){
+        this.router.navigate(["/events/"+eid]);
     }
 }
