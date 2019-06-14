@@ -11,7 +11,7 @@
                 <p class="card-text">{{groupToDisplay.groupDetails}}</p>
             </div>
             <div class="card-footer">
-                <small class="text-muted">Last updated {{group.lastUpdated}} mins ago</small>
+                <small class="text-muted">Last updated {{groupToDisplay.lastUpdated}} mins ago</small>
             </div>
         </div>
     </div>
@@ -25,7 +25,26 @@
     </div>
 </div>
 <div class="group-container">
-    <div class="row button-row row-striped">Here</div>
-    <div class="row button-row row-striped">here2</div>
-    <div class="row button-row row-striped">Here3</div>
+    <div *ngFor="let event of newGroupEvents; index as i" class="row button-row row-striped">
+        <div class="col-sm-12 col-lg-3">
+            <img [src]="event.imgUrl" class="resize" alt="">
+        </div>
+        <div class="col-sm-2 col-lg-2 text-center">
+            <h1 class="display-4"><span class="badge badge-secondary">{{eventDateInfo[i].date}}</span></h1>
+            <h2>{{eventDateInfo[i].month}}</h2>
+            <h3>{{eventDateInfo[i].year}}</h3>
+        </div>
+        <div class="col-sm-10 col-lg-7">
+            <h3 class="text-uppercase"><strong>{{event.eventName}}</strong></h3>
+            <h5 class="text-uppercase"><strong>{{event.location}}</strong></h5>
+            <ul class="list-inline">
+                <li class="list-inline-item"><i class="fa fa-calendar-o" aria-hidden="true"></i> {{eventDateInfo[i].day}}</li>
+                <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> {{eventDateInfo[i].stime}} - {{eventDateInfo[i].etime}}
+                </li>
+                <li class="list-inline-item"><i class="fa fa-location-arrow" aria-hidden="true"></i> {{event.location}}
+                </li>
+            </ul>
+            <p>{{event.eventDetails}}</p>
+        </div>
+    </div>
 </div>
