@@ -3,6 +3,7 @@
 Fin Meetup is a webapp created with Angular to help new fins communicate with one another.<br><br>
 The app allows users to find groups and events in their office, and also allows them to create their own.
 
+![Screenshot of Homepage](./img/homepage.png)
 
 ## Getting Started
 1. Clone the repo

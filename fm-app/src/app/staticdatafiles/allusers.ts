@@ -5,7 +5,7 @@ export var users = [
         pass: "hashed password",
         userId: 1,
         groupMemberships: [
-            1, 2, 5, 6
+            2, 4, 5, 6
         ],
         eventAttendance: [
             1, 2, 3, 4, 5, 6, 13, 14, 15, 16, 17, 18
@@ -17,7 +17,7 @@ export var users = [
         pass: "hashed password",
         userId: 2,
         groupMemberships: [
-            1, 2, 5, 6
+            1, 2, 3, 5, 6
         ],
         eventAttendance: [
             1, 2, 3, 4, 5, 6, 13, 14, 15, 16, 17, 18
@@ -29,7 +29,7 @@ export var users = [
         pass: "hashed password",
         userId: 3,
         groupMemberships: [
-            1, 2, 5, 6
+            1, 2,
         ],
         eventAttendance: [
             1, 2, 3, 4, 5, 6, 13, 14, 15, 16, 17, 18
@@ -41,7 +41,7 @@ export var users = [
         pass: "hashed password",
         userId: 4,
         groupMemberships: [
-            1, 2, 5, 6
+            4, 5, 6
         ],
         eventAttendance: [
             1, 2, 3, 4, 5, 6, 13, 14, 15, 16, 17, 18
@@ -65,7 +65,7 @@ export var users = [
         pass: "hashed password",
         userId: 6,
         groupMemberships: [
-            3, 4
+            3
         ],
         eventAttendance: [
             7, 8, 9, 10, 11, 12
@@ -77,7 +77,7 @@ export var users = [
         pass: "hashed password",
         userId: 7,
         groupMemberships: [
-            3, 4
+            6
         ],
         eventAttendance: [
             7, 8, 9, 10, 11, 12
@@ -89,10 +89,22 @@ export var users = [
         pass: "hashed password",
         userId: 8,
         groupMemberships: [
-            3, 4
+            1, 6
         ],
         eventAttendance: [
             7, 8, 9, 10, 11, 12
+        ],
+    },
+    {
+        userName: "Savannah",
+        userEmail: "savannah@test.com",
+        pass: "hashed password",
+        userId: 9,
+        groupMemberships: [
+            1, 4
+        ],
+        eventAttendance: [
+            10, 11, 12
         ],
     }
 ]
