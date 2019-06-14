@@ -25,7 +25,7 @@
     </div>
 </div>
 <div class="group-container">
-    <div *ngFor="let event of newGroupEvents; index as i" class="row button-row row-striped">
+    <div *ngFor="let event of newGroupEvents; index as i" class="row button-row row-striped" (click)="viewEvent(event.eventId)">
         <div class="col-sm-12 col-lg-3">
             <img [src]="event.imgUrl" class="resize" alt="">
         </div>

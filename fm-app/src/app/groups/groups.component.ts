@@ -6,6 +6,8 @@ import { map } from 'rxjs/operators';
 /* . . . */
 import { groups } from '../staticdatafiles/allgroups';
 import { events } from '../staticdatafiles/allevents';
+/* . . . */
+import { Router } from '@angular/router';
 
 @Component({
     templateUrl: 'groups.component.html',
@@ -20,7 +22,7 @@ export class GroupsComponent {
     newGroupEvents = []
     eventDateInfo = []
 
-    constructor(route: ActivatedRoute) {
+    constructor(route: ActivatedRoute, private router: Router) {
         const id: Observable<string> = route.params.pipe(map(p => p.id));
         const url: Observable<string> = route.url.pipe(map(segments => segments.join('')));
         // route.data includes both `data` and `resolve`
@@ -57,6 +59,10 @@ export class GroupsComponent {
             }
         }
 
+    }
+    // action handling
+    viewEvent(eid){
+        this.router.navigate(["/events/"+eid]);
     }
 
 }
